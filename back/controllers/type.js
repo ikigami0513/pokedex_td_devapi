@@ -1,5 +1,6 @@
 const Type = require('../models/type');
 const fs = require('fs');
+const path = require('path');
 
 exports.add = async (req, res) => {
     const name = req.body.name;
@@ -57,4 +58,24 @@ exports.all = async (req, res) => {
     const types = await Type.find();
 
     res.status(200).json(types);
+}
+
+exports.get_image = async (req, res) => {
+    try {
+        const type_id = req.query.id;
+        const type = await Type.findById(type_id);
+
+        if (!type) {
+            return res.status(404).json({ message: 'Type non trouvé.'});
+        }
+
+        const image_content = await fs.promises.readFile(type.img_path);
+
+        res.set('Content-Type', 'image/png');
+        res.send(image_content);
+    }
+    catch (error) {
+        console.error(error);
+        res.status(500).json({ message: "Erreur inconnue." });
+    }
 }

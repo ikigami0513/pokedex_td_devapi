@@ -9,5 +9,6 @@ const router = express.Router();
 router.post('/add', check_token, is_admin, upload.none(), type.add);
 router.get('/get', type.get);
 router.get('/all', type.all);
+router.get('/image', type.get_image);
 
 module.exports = router;

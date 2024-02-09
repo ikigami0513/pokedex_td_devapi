@@ -1,9 +1,10 @@
 const Pokemon = require('../models/pokemon');
+const fs = require('fs');
 
 exports.get_page = async (req, res) => {
     try {
         const page = parseInt(req.query.page) || 1;
-        const page_size = 25;
+        const page_size = 20;
         const skip = (page - 1) * page_size;
 
         const pokemons = await Pokemon.find()
@@ -55,24 +56,54 @@ exports.get = async (req, res) => {
 
 exports.add = async (req, res) => {
     try {
-        const { name, national, height, weight, type1_id, type2_id, pre_evo_ids, evo_ids } = req.body;
-        const img_path = req.file.path;
-
-        const new_pokemon = new Pokemon({
-            name,
+        const { 
+            name, 
             national,
-            img_path,
-            height,
-            weight,
-            type1_id,
-            type2_id,
-            pre_evo_ids,
-            evo_ids
+            image,
+            height, 
+            weight, 
+            type1_id, 
+            type2_id, 
+            health_point, 
+            attack, 
+            defense, 
+            attack_spe, 
+            defense_spe, 
+            speed
+        } = req.body;
+
+        const binary_image = Buffer.from(image.split(',')[1], 'base64');
+        const img_path = `uploads/${name}.png`;
+
+        fs.writeFile(img_path, binary_image, 'binary', async (err) => {
+            if (err) {
+                console.error(err);
+                res.status(500).json({
+                    message: "Erreur lors de l'upload de l'image."
+                });
+            }
+            else {
+                const new_pokemon = new Pokemon({
+                    name,
+                    national,
+                    img_path,
+                    height,
+                    weight,
+                    type1_id,
+                    type2_id,
+                    health_point,
+                    attack,
+                    defense,
+                    attack_spe,
+                    defense_spe,
+                    speed
+                });
+        
+                const saved_pokemon = await new_pokemon.save();
+        
+                res.status(201).json(saved_pokemon);
+            }
         });
-
-        const saved_pokemon = await new_pokemon.save();
-
-        res.status(201).json(saved_pokemon);
     }
     catch (error) {
         console.error(error);

@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 
 const pokemonSchema = new mongoose.Schema({
-    name: String,
     national: Number,
+    name: String,
     img_path: String,
     height: Number,
     weight: Number,

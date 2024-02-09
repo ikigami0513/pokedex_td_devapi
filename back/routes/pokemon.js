@@ -8,6 +8,6 @@ const router = express.Router();
 
 router.get('/all', pokemon.get_page);
 router.get('/pokemon', pokemon.get);
-router.post('/add', check_token, is_admin, upload.single('image'), pokemon.add);
+router.post('/add', check_token, is_admin, upload.none(), pokemon.add);
 
 module.exports = router;

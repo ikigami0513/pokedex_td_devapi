@@ -35,6 +35,10 @@ def admin_user_index():
     return render_template('admin/user/index.html')
 
 @app.route('/admin/pokemon')
+def admin_pokemon_index():
+    return render_template('admin/pokemon/index.html')
+
+@app.route('/admin/pokemon/add')
 def admin_pokemon_add():
     return render_template('admin/pokemon/add.html')
 

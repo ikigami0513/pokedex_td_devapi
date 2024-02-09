@@ -1,0 +1,74 @@
+{% extends "admin/index.html" %}
+
+{% block title %}
+    Ajouter Pokemon - Administration
+{% endblock title %}
+
+{% block content %}
+    {{ super() }}
+
+    <div class="max-w-md mx-auto bg-white rounded p-6 shadow-md m-6 h-min">
+        <h2 class="text-xl font-semibold mb-4">Ajouter un pokemon</h2>
+        <form>
+            <div class="mb-4 text-red-500" id="error"></div>
+            <div class="mb-4">
+                <label for="national" class="block text-gray-700 font-semibold mb-2">Numéro National</label>
+                <input type="number" id="national" name="national" class="border border-gray-300 rounded px-3 py-2 w-full focus:outline-none focus:border-blue-500" required>
+            </div>
+            <div class="mb-4">
+                <label for="username" class="block text-gray-700 font-semibold mb-2">Nom</label>
+                <input type="text" id="name" name="name" class="border border-gray-300 rounded px-3 py-2 w-full focus:outline-none focus:border-blue-500" required>
+            </div>
+            <div class="mb-4">
+                <label for="password" class="block text-gray-700 font-semibold mb-2">Image</label>
+                <input type="file" id="image" name="image" class="border border-gray-300 rounded px-3 py-2 w-full focus:outline-none focus:border-blue-500" required>
+            </div>
+            <div class="mb-4">
+                <label for="height" class="block text-gray-700 font-semibold mb-2">Taille</label>
+                <input type="number" id="height" name="height" class="border border-gray-300 rounded px-3 py-2 w-full focus:outline-none focus:border-blue-500" required>
+            </div>
+            <div class="mb-4">
+                <label for="weight" class="block text-gray-700 font-semibold mb-2">Poids</label>
+                <input type="number" id="weight" name="weight" class="border border-gray-300 rounded px-3 py-2 w-full focus:outline-none focus:border-blue-500" required>
+            </div>
+            <div class="mb-4">
+                <label for="type1" class="block text-gray-700 font-semibold mb-2">Premier type</label>
+                <select id="type1" name="type1" class="border border-gray-300 rounded px-3 py-2 w-full focus:outline-none focus:border-blue-500">
+                </select>
+            </div>
+            <div class="mb-4">
+                <label for="type2" class="block text-gray-700 font-semibold mb-2">Second type</label>
+                <select id="type2" name="type2" class="border border-gray-300 rounded px-3 py-2 w-full focus:outline-none focus:border-blue-500">
+                </select>
+            </div>
+            <div class="mb-4">
+                <label for="health_point" class="block text-gray-700 font-semibold mb-2">Point de vie</label>
+                <input type="number" id="health_point" name="health_point" class="border border-gray-300 rounded px-3 py-2 w-full focus:outline-none focus:border-blue-500" required>
+            </div>
+            <div class="mb-4">
+                <label for="attack" class="block text-gray-700 font-semibold mb-2">Attaque</label>
+                <input type="number" id="attack" name="attack" class="border border-gray-300 rounded px-3 py-2 w-full focus:outline-none focus:border-blue-500" required>
+            </div>
+            <div class="mb-4">
+                <label for="defense" class="block text-gray-700 font-semibold mb-2">Défense</label>
+                <input type="number" id="defense" name="defense" class="border border-gray-300 rounded px-3 py-2 w-full focus:outline-none focus:border-blue-500" required>
+            </div>
+            <div class="mb-4">
+                <label for="attack_spe" class="block text-gray-700 font-semibold mb-2">Attaque Spéciale</label>
+                <input type="number" id="attack_spe" name="attack_spe" class="border border-gray-300 rounded px-3 py-2 w-full focus:outline-none focus:border-blue-500" required>
+            </div>
+            <div class="mb-4">
+                <label for="defense_spe" class="block text-gray-700 font-semibold mb-2">Défense Spéciale</label>
+                <input type="number" id="defense_spe" name="defense_spe" class="border border-gray-300 rounded px-3 py-2 w-full focus:outline-none focus:border-blue-500" required>
+            </div>
+            <div class="mb-4">
+                <label for="speed" class="block text-gray-700 font-semibold mb-2">Vitesse</label>
+                <input type="number" id="speed" name="speed" class="border border-gray-300 rounded px-3 py-2 w-full focus:outline-none focus:border-blue-500" required>
+            </div>
+            <button type="submit" id="add_submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-200">Ajouter</button>
+        </form>
+    </div>
+
+    <script src="{{ url_for('get_js', path='admin/get_types_for_select.js') }}"></script>
+    <script src="{{ url_for('get_js', path='admin/add_pokemon.js') }}"></script>
+{% endblock content %}

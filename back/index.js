@@ -19,7 +19,7 @@ mongoose.connect('mongodb://localhost:27017/pokedex')
     console.error(error);
 });
 
-app.use(bodyParser.json());
+app.use(bodyParser.json({limit: '20mb'}));
 app.use(cors_policy);
 
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));

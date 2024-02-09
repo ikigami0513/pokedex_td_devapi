@@ -3,5 +3,7 @@
 {% block title %}Accueil{% endblock title %}
 
 {% block content %}
-    
+    <div id="table" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 m-8"></div>
+
+    <script src="{{ url_for('get_js', path='get_pokemons.js') }}"></script>
 {% endblock %}
