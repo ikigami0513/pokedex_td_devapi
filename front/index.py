@@ -34,5 +34,9 @@ def admin_type_add():
 def admin_user_index():
     return render_template('admin/user/index.html')
 
+@app.route('/admin/pokemon')
+def admin_pokemon_add():
+    return render_template('admin/pokemon/add.html')
+
 if __name__ == '__main__':
     app.run(debug=True)

@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
+const path = require('path');
 const {cors_policy} = require ('./middlewares/cors_policy');
 const user_router = require('./routes/user');
 const type_router = require('./routes/type');
@@ -20,6 +21,8 @@ mongoose.connect('mongodb://localhost:27017/pokedex')
 
 app.use(bodyParser.json());
 app.use(cors_policy);
+
+app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 app.use('/api/user', user_router);
 app.use('/api/type', type_router);

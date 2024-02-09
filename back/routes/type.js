@@ -6,7 +6,8 @@ const { upload } = require('../settings');
 
 const router = express.Router();
 
-router.post('/add', check_token, is_admin, upload.single('image'), type.add);
+router.post('/add', check_token, is_admin, upload.none(), type.add);
 router.get('/get', type.get);
+router.get('/all', type.all);
 
 module.exports = router;

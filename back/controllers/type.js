@@ -1,18 +1,32 @@
 const Type = require('../models/type');
+const fs = require('fs');
 
 exports.add = async (req, res) => {
     const name = req.body.name;
-    const img_path = req.file.path;
+    const base64_image = req.body.image;
 
-    const new_type = new Type({
-        name: name,
-        img_path: img_path
-    });
+    const binary_image = Buffer.from(base64_image.split(',')[1], 'base64');
+    const img_path = `uploads/${name}.png`;
 
-    await new_type.save();
-
-    res.status(201).json({
-        type: new_type
+    fs.writeFile(img_path, binary_image, 'binary', async (err) => {
+        if (err) {
+            console.error(err);
+            res.status(500).json({
+                message: "Erreur lors de l'upload de l'image."
+            });
+        }
+        else {
+            const new_type = new Type({
+                name: name,
+                img_path: img_path
+            });
+        
+            await new_type.save();
+        
+            res.status(201).json({
+                type: new_type
+            });
+        }
     });
 }
 
@@ -37,4 +51,10 @@ exports.get = async (req, res) => {
             message: `Aucun type nommé ${name} trouvé.`
         });
     }
+}
+
+exports.all = async (req, res) => {
+    const types = await Type.find();
+
+    res.status(200).json(types);
 }

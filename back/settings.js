@@ -12,7 +12,7 @@ const storage = multer.diskStorage({
     }
 });
 
-const upload = multer({ storage: storage });
+var upload = multer({ storage: storage });
 
 module.exports = {
     secretKey,
