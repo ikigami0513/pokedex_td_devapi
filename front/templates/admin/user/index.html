@@ -1,0 +1,25 @@
+{% extends "admin/index.html" %}
+
+{% block title %}
+    User - Administration
+{% endblock title %}
+
+{% block content %}
+    {{ super() }}
+
+    <div class="container mx-auto">
+        <div class="mb-4 text-red-500" id="error">
+        </div>
+
+        <div class="bg-white shadow-md rounded my-6">
+            <div class="flex justify-between bg-gray-200 px-4 py-2">
+                <div class="w-1/4">ID</div>
+                <div class="w-1/4">Nom d'utilisateur</div>
+                <div class="w-1/4">Admin</div>
+            </div>
+            <div class="divide-y divide-gray-200" id="table"></div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('get_js', path='admin/get_users.js') }}"></script>
+{% endblock content %}

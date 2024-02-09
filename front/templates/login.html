@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}Connexion{% endblock title %}
+
+{% block content %}
+    <div class="max-w-md mx-auto bg-white rounded p-6 shadow-md m-6">
+        <h2 class="text-xl font-semibold mb-4">Connexion</h2>
+        <form>
+            <div class="mb-4 text-red-500" id="error"></div>
+            <div class="mb-4">
+                <label for="username" class="block text-gray-700 font-semibold mb-2">Nom d'utilisateur</label>
+                <input type="text" id="username" name="username" class="border border-gray-300 rounded px-3 py-2 w-full focus:outline-none focus:border-blue-500" required>
+            </div>
+            <div class="mb-6">
+                <label for="password" class="block text-gray-700 font-semibold mb-2">Mot de passe</label>
+                <input type="password" id="password" name="password" class="border border-gray-300 rounded px-3 py-2 w-full focus:outline-none focus:border-blue-500" required>
+            </div>
+            <button type="submit" id="login_submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-200">Se connecter</button>
+        </form>
+    </div>
+    
+    <script src="{{ url_for('get_js', path='login.js') }}"></script>
+{% endblock %}

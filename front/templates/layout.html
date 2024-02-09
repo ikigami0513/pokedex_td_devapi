@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+    <html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{% block title %}{% endblock %} | Pokédex</title>
+        <script src="{{ url_for('get_js', path='tailwind/tailwind.js') }}"></script>
+        <script src="{{ url_for('get_js', path='tailwind/tailwind.config.js') }}"></script>
+        <script src="{{ url_for('get_js', path='is_logged.js') }}"></script>
+        {% block extraheaders %}{% endblock extraheaders %}
+    </head>
+    <body class="bg-gray-100">
+        <nav class="bg-gray-800 p-4">
+            <div class="container mx-auto flex justify-between items-center">
+                <div class="text-white text-xl font-bold">
+                    <a href="/" class="text-white hover:text-gray-300">Pokédex</a>
+                </div>
+                
+                <div class="flex space-x-4 justify-center items-center" id="submenu">
+                    <a href="#" class="text-white hover:text-gray-300">Pokédex</a>
+                </div>
+            </div>
+        </nav>
+        {% block content %}{% endblock %}
+    </body>
+</html>
