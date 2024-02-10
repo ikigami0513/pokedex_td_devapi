@@ -4,7 +4,7 @@ const fs = require('fs');
 exports.get_page = async (req, res) => {
     try {
         const page = parseInt(req.query.page) || 1;
-        const page_size = 20;
+        const page_size = 16;
         const skip = (page - 1) * page_size;
 
         const pokemons = await Pokemon.find()
@@ -28,7 +28,7 @@ exports.get = async (req, res) => {
         if (param) {
             if (param.startsWith('name:')) {
                 const name = param.substring(5);
-                pokemon = await Pokemon.findOne({ name: name});
+                pokemon = await Pokemon.findOne({ name: name });
             }
 
             else if (param.startsWith('national:')) {

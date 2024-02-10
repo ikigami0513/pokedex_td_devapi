@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block title %}Pokémon{% endblock title %}
+
+{% block content %}
+    <div class="max-w-xl mx-auto bg-white shadow-md rounded-lg overflow-hidden mt-4">
+        <div class="flex justify-between items-center px-6 py-4 bg-gray-200">
+            <h1 class="text-xl font-bold text-gray-800" id="name"></h1>
+            <span class="text-sm text-gray-600" id="national"></span>
+        </div>
+        <div class="p-6">
+            <img src="" alt="Pikachu" class="mx-auto w-48 h-48" id="image">
+            <ul class="mt-4">
+                <li class="flex items-center mb-2">
+                    <span class="mr-2">Type:</span>
+                    <span class="text-gray-700 flex" id="type"></span>
+                </li>
+                <li class="flex items-center mb-2">
+                    <span class="mr-2">Taille:</span>
+                    <span class="text-gray-700" id="height"></span>
+                </li>
+                <li class="flex items-center mb-2">
+                    <span class="mr-2">Poids:</span>
+                    <span class="text-gray-700" id="weight"></span>
+                </li>
+                <li class="items-center">
+                    <span class="mr-2">Statistiques:</span>
+                    <ul id="stats"></ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="{{ url_for('get_js', path='get_pokemon.js') }}"></script>
+{% endblock content %}

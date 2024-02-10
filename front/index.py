@@ -42,5 +42,9 @@ def admin_pokemon_index():
 def admin_pokemon_add():
     return render_template('admin/pokemon/add.html')
 
+@app.route('/pokemon')
+def pokemon():
+    return render_template('pokemon.html')
+
 if __name__ == '__main__':
     app.run(debug=True)

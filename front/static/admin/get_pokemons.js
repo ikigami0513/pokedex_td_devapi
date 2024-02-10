@@ -3,7 +3,10 @@ document.addEventListener("DOMContentLoaded", async function(){
         "Accept": "*/*",
     }
 
-    let response = await fetch("http://localhost:3000/api/pokemon/all", {
+    var url_params = new URLSearchParams(window.location.search);
+    const page = url_params.get('page') || 1;
+
+    let response = await fetch(`http://localhost:3000/api/pokemon/all?page=${page}`, {
         method: "GET",
         headers: headers
     });
@@ -47,5 +50,21 @@ document.addEventListener("DOMContentLoaded", async function(){
             </div>
             `;
         });
+
+        if (page !== "1") {
+            document.querySelector('#pagination').innerHTML += `
+                <a href="http://localhost:5000/admin/pokemon?page=${parseInt(page) - 1}">
+                    <button class="bg-green-900 text-white py-2 px-4 rounded-xl">Précédent</button>
+                </a>
+            `;
+        }
+
+        if (data.length >= 16) {
+            document.querySelector('#pagination').innerHTML += `
+                <a href="http://localhost:5000/admin/pokemon?page=${parseInt(page) + 1}">
+                    <button class="bg-green-900 text-white py-2 px-4 rounded-xl">Suivant</button>
+                </a>
+            `;
+        }
     }
 });
