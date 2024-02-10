@@ -1,0 +1,436 @@
+[{
+  "_id": {
+    "$oid": "65c695d1089e2d51395db737"
+  },
+  "national": 1,
+  "name": "bulbizarre",
+  "img_path": "uploads/bulbizarre.png",
+  "height": 0.7,
+  "weight": 6.9,
+  "type1_id": {
+    "$oid": "65c686676863d2682c7d62bb"
+  },
+  "type2_id": {
+    "$oid": "65c6866d6863d2682c7d62be"
+  },
+  "health_point": 45,
+  "attack": 49,
+  "defense": 49,
+  "attack_spe": 65,
+  "defense_spe": 65,
+  "speed": 45,
+  "pre_evo_ids": [],
+  "evo_ids": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c69dd400c3ae19282175b2"
+  },
+  "national": 2,
+  "name": "herbizarre",
+  "img_path": "uploads/herbizarre.png",
+  "height": 1,
+  "weight": 13,
+  "type1_id": {
+    "$oid": "65c686676863d2682c7d62bb"
+  },
+  "type2_id": {
+    "$oid": "65c6866d6863d2682c7d62be"
+  },
+  "health_point": 60,
+  "attack": 62,
+  "defense": 63,
+  "attack_spe": 80,
+  "defense_spe": 80,
+  "speed": 60,
+  "pre_evo_ids": [],
+  "evo_ids": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c69e8a00c3ae19282175b8"
+  },
+  "national": 3,
+  "name": "florizarre",
+  "img_path": "uploads/florizarre.png",
+  "height": 2,
+  "weight": 100,
+  "type1_id": {
+    "$oid": "65c686676863d2682c7d62bb"
+  },
+  "type2_id": {
+    "$oid": "65c6866d6863d2682c7d62be"
+  },
+  "health_point": 80,
+  "attack": 82,
+  "defense": 83,
+  "attack_spe": 100,
+  "defense_spe": 100,
+  "speed": 80,
+  "pre_evo_ids": [],
+  "evo_ids": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c6a0ccc80fb2e4a5563892"
+  },
+  "national": 4,
+  "name": "salamèche",
+  "img_path": "uploads/salamèche.png",
+  "height": 0.6,
+  "weight": 8.5,
+  "type1_id": {
+    "$oid": "65c6864a6863d2682c7d62af"
+  },
+  "type2_id": null,
+  "health_point": 39,
+  "attack": 52,
+  "defense": 43,
+  "attack_spe": 60,
+  "defense_spe": 50,
+  "speed": 65,
+  "pre_evo_ids": [],
+  "evo_ids": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c6a1a31f014bafa3005619"
+  },
+  "national": 5,
+  "name": "reptincel",
+  "img_path": "uploads/reptincel.png",
+  "height": 1.1,
+  "weight": 19,
+  "type1_id": {
+    "$oid": "65c6864a6863d2682c7d62af"
+  },
+  "type2_id": null,
+  "health_point": 58,
+  "attack": 64,
+  "defense": 58,
+  "attack_spe": 80,
+  "defense_spe": 65,
+  "speed": 80,
+  "pre_evo_ids": [],
+  "evo_ids": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c6a1ec1f014bafa3005620"
+  },
+  "national": 6,
+  "name": "dracaufeu",
+  "img_path": "uploads/dracaufeu.png",
+  "height": 1.7,
+  "weight": 90.5,
+  "type1_id": {
+    "$oid": "65c6864a6863d2682c7d62af"
+  },
+  "type2_id": {
+    "$oid": "65c686936863d2682c7d62d0"
+  },
+  "health_point": 78,
+  "attack": 84,
+  "defense": 78,
+  "attack_spe": 109,
+  "defense_spe": 85,
+  "speed": 100,
+  "pre_evo_ids": [],
+  "evo_ids": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c6a6431f014bafa3005748"
+  },
+  "national": 7,
+  "name": "carapuce",
+  "img_path": "uploads/carapuce.png",
+  "height": 0.5,
+  "weight": 9,
+  "type1_id": {
+    "$oid": "65c686356863d2682c7d62a6"
+  },
+  "type2_id": null,
+  "health_point": 44,
+  "attack": 48,
+  "defense": 65,
+  "attack_spe": 50,
+  "defense_spe": 64,
+  "speed": 43,
+  "pre_evo_ids": [],
+  "evo_ids": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c6a6991f014bafa300575d"
+  },
+  "national": 7,
+  "name": "carabaffe",
+  "img_path": "uploads/carabaffe.png",
+  "height": 1,
+  "weight": 22.5,
+  "type1_id": {
+    "$oid": "65c686356863d2682c7d62a6"
+  },
+  "type2_id": null,
+  "health_point": 59,
+  "attack": 63,
+  "defense": 80,
+  "attack_spe": 65,
+  "defense_spe": 80,
+  "speed": 58,
+  "pre_evo_ids": [],
+  "evo_ids": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c6a6f01f014bafa3005772"
+  },
+  "national": 9,
+  "name": "tortank",
+  "img_path": "uploads/tortank.png",
+  "height": 1.6,
+  "weight": 85.5,
+  "type1_id": {
+    "$oid": "65c686356863d2682c7d62a6"
+  },
+  "type2_id": null,
+  "health_point": 79,
+  "attack": 83,
+  "defense": 100,
+  "attack_spe": 85,
+  "defense_spe": 105,
+  "speed": 78,
+  "pre_evo_ids": [],
+  "evo_ids": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c6a79a1f014bafa300578d"
+  },
+  "national": 10,
+  "name": "chenipan",
+  "img_path": "uploads/chenipan.png",
+  "height": 0.3,
+  "weight": 2.9,
+  "type1_id": {
+    "$oid": "65c686586863d2682c7d62b5"
+  },
+  "type2_id": null,
+  "health_point": 45,
+  "attack": 30,
+  "defense": 35,
+  "attack_spe": 20,
+  "defense_spe": 20,
+  "speed": 45,
+  "pre_evo_ids": [],
+  "evo_ids": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c6a7c81f014bafa3005797"
+  },
+  "national": 11,
+  "name": "chrysacier",
+  "img_path": "uploads/chrysacier.png",
+  "height": 0.7,
+  "weight": 9.9,
+  "type1_id": {
+    "$oid": "65c686586863d2682c7d62b5"
+  },
+  "type2_id": null,
+  "health_point": 50,
+  "attack": 20,
+  "defense": 55,
+  "attack_spe": 25,
+  "defense_spe": 25,
+  "speed": 30,
+  "pre_evo_ids": [],
+  "evo_ids": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c6a7f81f014bafa30057a1"
+  },
+  "national": 12,
+  "name": "papilusion",
+  "img_path": "uploads/papilusion.png",
+  "height": 1.1,
+  "weight": 32,
+  "type1_id": {
+    "$oid": "65c686586863d2682c7d62b5"
+  },
+  "type2_id": {
+    "$oid": "65c686936863d2682c7d62d0"
+  },
+  "health_point": 60,
+  "attack": 45,
+  "defense": 50,
+  "attack_spe": 90,
+  "defense_spe": 80,
+  "speed": 70,
+  "pre_evo_ids": [],
+  "evo_ids": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c6a8301f014bafa30057b9"
+  },
+  "national": 13,
+  "name": "aspicot",
+  "img_path": "uploads/aspicot.png",
+  "height": 0.3,
+  "weight": 3.2,
+  "type1_id": {
+    "$oid": "65c686586863d2682c7d62b5"
+  },
+  "type2_id": {
+    "$oid": "65c6866d6863d2682c7d62be"
+  },
+  "health_point": 40,
+  "attack": 35,
+  "defense": 30,
+  "attack_spe": 20,
+  "defense_spe": 20,
+  "speed": 50,
+  "pre_evo_ids": [],
+  "evo_ids": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c6a85a1f014bafa30057c3"
+  },
+  "national": 14,
+  "name": "coconfort",
+  "img_path": "uploads/coconfort.png",
+  "height": 0.6,
+  "weight": 10,
+  "type1_id": {
+    "$oid": "65c686586863d2682c7d62b5"
+  },
+  "type2_id": {
+    "$oid": "65c6866d6863d2682c7d62be"
+  },
+  "health_point": 45,
+  "attack": 25,
+  "defense": 50,
+  "attack_spe": 25,
+  "defense_spe": 25,
+  "speed": 35,
+  "pre_evo_ids": [],
+  "evo_ids": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c6a88c1f014bafa30057cd"
+  },
+  "national": 15,
+  "name": "dardargnan",
+  "img_path": "uploads/dardargnan.png",
+  "height": 1,
+  "weight": 29.5,
+  "type1_id": {
+    "$oid": "65c686586863d2682c7d62b5"
+  },
+  "type2_id": {
+    "$oid": "65c6866d6863d2682c7d62be"
+  },
+  "health_point": 65,
+  "attack": 90,
+  "defense": 40,
+  "attack_spe": 45,
+  "defense_spe": 80,
+  "speed": 75,
+  "pre_evo_ids": [],
+  "evo_ids": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c6a8cf1f014bafa30057e5"
+  },
+  "national": 16,
+  "name": "roucool",
+  "img_path": "uploads/roucool.png",
+  "height": 0.3,
+  "weight": 1.8,
+  "type1_id": {
+    "$oid": "65c686606863d2682c7d62b8"
+  },
+  "type2_id": {
+    "$oid": "65c686936863d2682c7d62d0"
+  },
+  "health_point": 40,
+  "attack": 45,
+  "defense": 40,
+  "attack_spe": 35,
+  "defense_spe": 35,
+  "speed": 56,
+  "pre_evo_ids": [],
+  "evo_ids": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c6a8ff1f014bafa30057f0"
+  },
+  "national": 17,
+  "name": "roucoups",
+  "img_path": "uploads/roucoups.png",
+  "height": 1.1,
+  "weight": 30,
+  "type1_id": {
+    "$oid": "65c686606863d2682c7d62b8"
+  },
+  "type2_id": {
+    "$oid": "65c686936863d2682c7d62d0"
+  },
+  "health_point": 63,
+  "attack": 60,
+  "defense": 55,
+  "attack_spe": 50,
+  "defense_spe": 50,
+  "speed": 71,
+  "pre_evo_ids": [],
+  "evo_ids": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c6a9dc67d277de3ff34876"
+  },
+  "national": 18,
+  "name": "roucarnage",
+  "img_path": "uploads/roucarnage.png",
+  "height": 1.5,
+  "weight": 39.5,
+  "type1_id": {
+    "$oid": "65c686606863d2682c7d62b8"
+  },
+  "type2_id": {
+    "$oid": "65c686936863d2682c7d62d0"
+  },
+  "health_point": 83,
+  "attack": 80,
+  "defense": 75,
+  "attack_spe": 70,
+  "defense_spe": 70,
+  "speed": 101,
+  "pre_evo_ids": [],
+  "evo_ids": [],
+  "__v": 0
+}]

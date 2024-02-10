@@ -1,0 +1,28 @@
+[{
+  "_id": {
+    "$oid": "65c535e7f2767d4c48994ccf"
+  },
+  "username": "ikigami",
+  "password": "$2b$10$BkuTifdC1TOWkUzm6x5n0.tw6iFmeXAvgmGV0HB80wQIhaZW4FjEy",
+  "__v": 0,
+  "is_admin": true,
+  "pokemons": "[ObjectId('65c695d1089e2d51395db737')]"
+},
+{
+  "_id": {
+    "$oid": "65c60246db3f16ff618b4975"
+  },
+  "username": "admin",
+  "password": "$2b$10$GQyng9.a/HqHsN6/ZkasbORq8CJmogHRGLVQH.aLg5N7XFvZOexoy",
+  "is_admin": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c667f7560ace8e2ab27f0a"
+  },
+  "username": "ethan",
+  "password": "$2b$10$8LULVJz4PGJlMTCLojyob.33OHQOUG208SDHDVTME9dWgKQpHQdcK",
+  "is_admin": false,
+  "__v": 0
+}]

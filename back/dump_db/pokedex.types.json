@@ -1,0 +1,144 @@
+[{
+  "_id": {
+    "$oid": "65c6824780dd9e98b2b593d0"
+  },
+  "name": "acier",
+  "img_path": "uploads/acier.png",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c686286863d2682c7d62a0"
+  },
+  "name": "combat",
+  "img_path": "uploads/combat.png",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c6862f6863d2682c7d62a3"
+  },
+  "name": "dragon",
+  "img_path": "uploads/dragon.png",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c686356863d2682c7d62a6"
+  },
+  "name": "eau",
+  "img_path": "uploads/eau.png",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c6863c6863d2682c7d62a9"
+  },
+  "name": "electrick",
+  "img_path": "uploads/electrick.png",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c686436863d2682c7d62ac"
+  },
+  "name": "fee",
+  "img_path": "uploads/fee.png",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c6864a6863d2682c7d62af"
+  },
+  "name": "feu",
+  "img_path": "uploads/feu.png",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c686516863d2682c7d62b2"
+  },
+  "name": "glace",
+  "img_path": "uploads/glace.png",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c686586863d2682c7d62b5"
+  },
+  "name": "insecte",
+  "img_path": "uploads/insecte.png",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c686606863d2682c7d62b8"
+  },
+  "name": "normal",
+  "img_path": "uploads/normal.png",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c686676863d2682c7d62bb"
+  },
+  "name": "plante",
+  "img_path": "uploads/plante.png",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c6866d6863d2682c7d62be"
+  },
+  "name": "poison",
+  "img_path": "uploads/poison.png",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c686746863d2682c7d62c1"
+  },
+  "name": "psy",
+  "img_path": "uploads/psy.png",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c686796863d2682c7d62c4"
+  },
+  "name": "roche",
+  "img_path": "uploads/roche.png",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c686806863d2682c7d62c7"
+  },
+  "name": "sol",
+  "img_path": "uploads/sol.png",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c686866863d2682c7d62ca"
+  },
+  "name": "spectre",
+  "img_path": "uploads/spectre.png",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c6868d6863d2682c7d62cd"
+  },
+  "name": "tenebres",
+  "img_path": "uploads/tenebres.png",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65c686936863d2682c7d62d0"
+  },
+  "name": "vol",
+  "img_path": "uploads/vol.png",
+  "__v": 0
+}]
